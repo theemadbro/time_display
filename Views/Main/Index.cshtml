@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="5">
+    <title>time_display</title>
+</head>
+<body>
+    @{
+        String Day = DateTime.Now.ToString("dddd");
+        String Date = DateTime.Now.ToString("MMM dd, yyyy");
+        String Time = DateTime.Now.ToString("HH:mm:ss tt");
+    }
+    <h1 style="text-align: center">@Day</h1>
+    <h1 style="text-align: center">@Date</h1>
+    <h1 style="text-align: center">@Time</h1>
+    <p style="text-align: center">Will refresh every 5 seconds!</p>
+</body>
+</html>
